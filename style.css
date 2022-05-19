@@ -1,0 +1,73 @@
+@font-face {
+  font-family: opensans;
+  src: url("opensans.ttf");
+}
+
+* {
+  font-family: opensans;
+}
+
+body {
+  color: #fff;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.formpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form {
+  padding: 50px;
+  border-radius: 5px;
+  background-color: rgba(27, 27, 50, 0.7);
+}
+
+.form-input {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.label {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  background-color: #37af65;
+  border-radius: 5px;
+  color: #fff;
+}

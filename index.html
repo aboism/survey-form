@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="formpage">
+      <div class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <div class="form">
+        <form action="#" id="survey-form">
+          <div class="form-input">
+            <label for="name" id="name-label" class="label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label for="email" id="email-label" class="label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label for="number" id="number-label" class="label">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              placeholder="Age"
+              min="10"
+              max="99"
+            />
+          </div>
+          <div class="form-input">
+            <label for="dropdown" class="label">
+              Which option best describes your current role?
+            </label>
+            <select name="role" id="dropdown">
+              <option value="" disabled selected>Select current role</option>
+              <option value="student">Student</option>
+              <option value="fulltime-job">Full time job</option>
+              <option value="Fulltiem-learner">Full time learner</option>
+              <option value="prefernot">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="recommend" class="label">
+              Whould you recommend this course to a friend?
+            </label>
+            <label
+              ><input type="radio" name="recommend" id="definitely" checked />
+              Definitely
+            </label>
+            <label>
+              <input type="radio" name="recommend" id="maybe" />
+              Maybe
+            </label>
+            <label>
+              <input type="radio" name="recommend" id="notsure" />
+              Not sure
+            </label>
+          </div>
+          <div class="form-input">
+            <p class="label">
+              What would you like to see improved? (check all that apply)
+            </p>
+            <div class="check">
+              <label>
+                <input type="checkbox" value="frontend" />
+                Front-end Projects
+              </label>
+              <label>
+                <input type="checkbox" value="backend" />
+                Back-end Projects
+              </label>
+              <label>
+                <input type="checkbox" value="forum" />
+                Forum
+              </label>
+              <label>
+                <input type="checkbox" value="videos" />
+                Videos
+              </label>
+            </div>
+          </div>
+          <div class="form-input">
+            <p class="label">Any comments or suggestions?</p>
+            <textarea name="comment" id="comment" cols="30" rows="10">
+Enter your comment here...</textarea
+            >
+          </div>
+          <div class="form-input">
+            <input type="submit" id="submit" class="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
